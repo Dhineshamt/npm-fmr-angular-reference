@@ -10,5 +10,5 @@
 8. Directive can bind to host's events by @HostListener('event') handler() {...}
 9. There are as many directive instances as it is applied. So each application has its own instance.
 10. Directive instance is created after the host element or component is created. Therefore, this host is available for dependency injection in directive's constructor.
-11. Structural directive actually rewrites the host using ng-template. But ng-template is a pseudo element, meaning it cannot be rendered unless explicitly instructed. Inside the structural directive's constructor, we take a TemplateRef (reference to the ng-template) and ViewContainerRef (reference to the whole component's template). Then, we call createEmbeddedView on ViewContainerRef passing the TemplateRef.
+11. Structural directive actually rewrites the host using ng-template. But ng-template is a pseudo element, meaning it cannot be rendered unless explicitly instructed. Inside the structural directive's constructor, we take a TemplateRef<any> (reference to the ng-template) and ViewContainerRef (reference to the whole component's template). Then, we call createEmbeddedView on ViewContainerRef passing the TemplateRef.
 12. Please refer to different branches of <https://github.com/vivekanandpv/angular-custom-directives>
