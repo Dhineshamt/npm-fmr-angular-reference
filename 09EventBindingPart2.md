@@ -1,4 +1,4 @@
-# Topic 8: Event Binding: Part 2
+# Topic 9: Event Binding: Part 2
 
 1. DOM event handling mechanism in Angular can be augmented to let the child send data to the parent. But there are many moving parts.
 2. Like an HTML element, we like our child component expose its own custom events. Custom events, because these are emited at the behest of the child component.
