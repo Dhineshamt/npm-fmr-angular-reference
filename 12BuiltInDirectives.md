@@ -8,4 +8,6 @@
 6. Let's consider the [ngClass] directive, which takes an expression to set the css class of the element. This expression could be a string, an array of strings, or a config object (key is the css class and value is the boolean). If the expression is changed during the runtime, Angular changes the actual DOM properties thus creating the direct access tunnel.
 7. Structural directive lets us add DOM nodes based on some expression. Structural directives are prefixed with \*
 8. Consider the conditional rendering by *ngIf="expression" or list rendering by *ngFor="expression"
-9. Refer to different branches of <https://github.com/vivekanandpv/angular-built-in-directives>
+9. Also, consider how [ngSwitch]="expression" directive works with *ngSwitchCase and *ngSwitchDefault structural directives.
+10. Please note the use of `<ng-container>` pseudo selector and how it could be used instead of a real selector such as a `<div>`
+11. Refer to different branches of <https://github.com/vivekanandpv/angular-built-in-directives>
